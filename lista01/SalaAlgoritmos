@@ -1,0 +1,86 @@
+ex1
+package main
+
+import (
+"fmt"
+"strconv"
+)
+
+func main() {
+  var arr []int
+  for c := 0; c < 3; c++ {
+    var input string
+    fmt.Println("Digite o %d* número: ", c+1)
+    fmt.Scanln(&input)
+    num, err := strconv.Atoi(input)
+  if err != nil {
+    fmt.Println("Erro ao converter a entrada para número inteiro.")
+    return
+  }
+  arr = append(arr, num)
+}
+
+for c := 0; c < 3; c++ {
+  for j := c + 1; j < 3; j++ {
+    if arr[c] > arr[j] {
+      temp := arr[c]
+      arr[c] = arr[j]
+      arr[j] = temp
+      }
+    }
+  }
+
+fmt.Println(arr)
+}
+
+ex2
+package main
+
+import(
+    "fmt"
+    "math"
+    "strconv"
+    )
+
+func main(){
+  var arr []int
+  for c := 0; c < 3; c++ {
+    var input string
+    fmt.Printf("Digite o %d* número:\n", c+1)
+    fmt.Scanln(&input)
+    num, err := strconv.Atoi(input)
+    if err != nil {
+      fmt.Println("Erro ao converter a entrada para número inteiro.")
+      return
+    }
+    arr = append(arr, num)
+    }
+    max := math.MinInt64
+    for _, v := range arr {
+      if v > max {
+        max = v
+      }
+    }
+  min := math.MaxInt64
+  for _, v := range arr {
+    if v < min {
+      min = v
+    }
+  }
+  fmt.Println("Menor = ",min)
+  fmt.Println("Maior = ",max)
+  }
+
+ex3
+package main
+import "fmt"
+
+func main() {
+    var m,d float32
+    fmt.Print("Digite o preço do produto : ")
+    fmt.Scan(&m)
+    fmt.Print("Digite o desconto no produto : ")
+    fmt.Scan(&d)
+    fmt.Print("O valor do produto é :")
+    fmt.Println(m*(1-(d/100)))
+}
