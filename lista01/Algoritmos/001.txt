@@ -5,7 +5,7 @@ inicio
     para c de 1 ate 3 de 1 em 1 faca:
         leia linha e guarde em temp
         soma = soma + temp
-    se soma>=6:
+    se soma/3>=6:
         escreva "APROVADO"
     senao :
         escreva "REPROVADO"
