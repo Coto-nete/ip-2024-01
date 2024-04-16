@@ -4,6 +4,9 @@ import("fmt")
 func main(){
 	var matricula int 
 	ftm.Scan(&matricula)
+	if matricula == -1{
+		return
+	}
 	var temp,mp,ml,mt float32
 	for c:=0;c<8;c++{
 		fmt.Scan(&temp)
