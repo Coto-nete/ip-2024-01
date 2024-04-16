@@ -7,7 +7,7 @@ inicio
         leia linha guarde em temp
         se length(temp)>1:
             escreva"DIGITO INVALIDO"
-            break
-        resultado = resultado + temp
+            return 
+        resultado = resultado + str(temp)
         escreva resultado , int(resultado)*int(resultado)
 fim
