@@ -2,12 +2,13 @@ package main
 import("fmt")
 
 func main (){
-	var temp,i,r,e int 
+	var temp,logica,i,r,e int 
 	fmt.Scan(&i)
 	fmt.Scan(&r)
 	fmt.Scan(&e)
-	for c:=i;c<i+(e-1)*r;c+=r{
-		temp += c 
+	for c:=0;c<e;c++{
+		logica =i+(r*c)
+		temp += logica
 	}
-	fmt.Printf("%i",temp)
+	fmt.Printf("%v",temp)
 }

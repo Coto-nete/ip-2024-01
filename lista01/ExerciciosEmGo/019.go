@@ -3,10 +3,10 @@ import("fmt")
 
 func main (){
 	var n int 
-	var temp float32
+	var temp float64
 	fmt.Scan(&n)
 	for c:=1;c<=n;c++{
-		temp=temp+1/c
+		temp = temp + (1/(float64(c)))
 	}
-	fmt.Printf("&f",temp)
+	fmt.Printf("%.6f",temp)
 }
