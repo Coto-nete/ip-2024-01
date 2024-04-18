@@ -2,8 +2,7 @@ package main
 import("fmt")
 
 func main(){
-	l:=1
-	for l<5{
+	for {
 		var matricula int 
 		fmt.Scan(&matricula)
 		if matricula == -1{
@@ -26,15 +25,15 @@ func main(){
 		fmt.Scan(&pres)
 		if (0.7*mp + 0.15*ml +0.15*nt>6){
 			if pres>96{
-				fmt.Printf("Matricula : %v, Nota final: %.2f,Situação final:Aprovado\n",matricula,nt)
+				fmt.Printf("Matricula : %v, Nota final: %.2f, Situação final:Aprovado \n",matricula,float32(0.7*mp + 0.15*ml +0.15*nt))
 			}else{
-				fmt.Printf("Matricula : %v, Nota final: %.2f,Situação final:Reprovado por frequencia\n ",matricula,nt)
+				fmt.Printf("Matricula : %v, Nota final: %.2f, Situação final:Reprovado por frequencia \n ",matricula,float32(0.7*mp + 0.15*ml +0.15*nt))
 			}
 		}else{
 			if pres>96{
-				fmt.Printf("Matricula : %v, Nota final: %.2f,Situação final:Reprovado por nota \n",matricula,nt)
+				fmt.Printf("Matricula : %v, Nota final: %.2f, Situação final:Reprovado por nota \n",matricula,float32(0.7*mp + 0.15*ml +0.15*nt))
 			}else{
-				fmt.Printf("Matricula : %v, Nota final: %.2f,Situação final:Reprovado por nota e frequencia \n",matricula,nt)
+				fmt.Printf("Matricula : %v, Nota final: %.2f, Situação final:Reprovado por nota e frequencia \n",matricula,float32(0.7*mp + 0.15*ml +0.15*nt))
 			}
 		}
 	}

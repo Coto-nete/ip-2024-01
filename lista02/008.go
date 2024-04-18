@@ -10,9 +10,7 @@ func fac(n int)int{
 }
 
 func main(){
-	var n,possiveis int
-	var temp string
-	var times []string
+	var n int
 	fmt.Scan(&n)
 	if n<=2{
 		fmt.Print("Campeonato inválido !")

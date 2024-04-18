@@ -12,10 +12,13 @@ func main (){
 	}
 	for c:=0;c<n-1;c++{
 		achar := 1
-		contar := 1
+		contar := 0
 		for j:=c+1;j<n;j++{
 			if nums[j]==nums[c]+achar{
 				achar ++
+				if contar==0{
+					contar++
+				}
 				contar++
 			}
 		}
