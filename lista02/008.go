@@ -10,16 +10,17 @@ func fac(n int)int{
 }
 
 func main(){
-	var n,possiveis int
-	var temp string
-	var times []string
+	var n int
 	fmt.Scan(&n)
-	possiveis = (fac(n)/(2*fac(n-2)))
-	for c:=0;c<n;c++{
-		temp = "time"+string(c+1)
-		fmt.Print(temp)
-		times = append(times,temp)
+	if n<=2{
+		fmt.Print("Campeonato inválido !")
+		return
 	}
-	fmt.Print(times)
-	fmt.Print(possiveis)
+	cont:=1
+	for c:=0;c<n-1;c++{
+		for j:=c+1;j<n;j++{
+			fmt.Printf("Final %v:Time%v X Time%v\n",cont,c+1,j+1)
+			cont++
+		}
+	}
 }
