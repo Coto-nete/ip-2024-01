@@ -1,16 +1,28 @@
 package main 
-import("fmt")
+import(
+	"fmt"
+	"math"
+	)
 
-
-func r(n float64)float64{
-	if n==0{
-		return 0
+func rk(n float64,k int )float64{
+	if k==0{
+		return 1
 	}else{
-		fmt.Printf( "%.2f",r(k-1)+(n/(r(k-1)))/2)
+		return (rk(n,k-1)+(n/rk(n,k-1)))/2
 	}
 }
 
 func main(){
-	var n float64
-	r(n)
+	var n, e float64
+	fmt.Scan(&n)
+	fmt.Scan(&e)
+	k:=1
+	for {
+		temp := math.Abs(n-rk(n,k)*rk(n,k))
+		fmt.Printf("r : %.9f, erro: %.9f \n",rk(n,k),temp)
+		if temp<e{
+			break
+		}
+		k++
+	}
 }
