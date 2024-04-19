@@ -1,30 +1,31 @@
 package main
 import("fmt")
 
-func main (){
-	var n,temp int
+func main(){
+	var n,temp,lk,cont,resp int 
 	fmt.Scan(&n)
-	var nums []int
-	var res int 
+	var reg []int
 	for c:=0;c<n;c++{
 		fmt.Scan(&temp)
-		nums = append(nums, temp)
+		reg = append(reg, temp)
 	}
 	for c:=0;c<n-1;c++{
-		achar := 1
-		contar := 0
+		lk = reg[c]
 		for j:=c+1;j<n;j++{
-			if nums[j]==nums[c]+achar{
-				achar ++
-				if contar==0{
-					contar++
+			if reg[j]>lk{
+				lk = reg[j]
+				cont++
+			}else{
+				if cont>=resp{
+					resp = cont
 				}
-				contar++
+				break
 			}
+			
+			}
+			cont=0
 		}
-		if contar>=res{
-			res = contar
-		}
+		fmt.Printf("O comprimento do segmento crescente maximo e : %v",resp)
 	}
-	fmt.Printf("O comprimento do segmento crescente maximo e : %v\n",res)
-}
+	
+
