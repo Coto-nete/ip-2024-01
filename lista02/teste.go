@@ -1,8 +1,13 @@
 package main
-import("fmt")
+
+import (
+	"fmt"
+	"math"
+)
 
 func main (){
-	var a,b float32
-	fmt.Scan(&a)
+	var c int 
+	c = 0
+	fmt.Printf("%.2f",math.Pow(20,float64(c)))
 	
 }

@@ -20,7 +20,7 @@ func main(){
 	fmt.Scan(&x)
 	fmt.Scan(&vezes)
 	for c:=0;c<=vezes;c++{
-		res+=(math.Pow(-1,float64(c))*math.Pow(x,2*float64(c)))/float64(fac(2*c))
+		res += (math.Pow(-1,float64(c))*math.Pow(x,(2*float64(c))+1))/float64(fac(2*c+1))
 	}
-	fmt.Printf("cos(%.2f) = %.6f",x,res)
+	fmt.Printf("seno(%.2f) = %.6f",x,res)
 }
