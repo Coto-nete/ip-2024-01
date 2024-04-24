@@ -2,10 +2,7 @@ package main
 import("fmt")
 
 func main (){
-	var a,b string
+	var a,b float32
 	fmt.Scan(&a)
-	fmt.Scan(&b)
-	if a>b{
-		print("Hi")
-	}
+	
 }
