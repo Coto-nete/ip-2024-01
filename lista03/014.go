@@ -65,11 +65,17 @@ func mergesort(lista []int)[]int{
 func main(){
 	var x,temp int
 	var reg []int
+	var resposta float64
 	fmt.Scan(&x)
 	for c:=0;c<x;c++{
 		fmt.Scan(&temp)
-		reg = append(reg,temp)
+		reg = append(reg, temp)
 	}
 	reg = mergesort(reg)
-	fmt.Print(reg)
+	if len(reg)%2==1{
+		resposta = float64(reg[len(reg)/2])
+	}else{
+		resposta = float64(reg[len(reg)/2-1]+reg[len(reg)/2])/2
+	}
+	fmt.Printf("%.2f",resposta)
 }
