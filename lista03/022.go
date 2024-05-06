@@ -1,7 +1,9 @@
 package main
-import ("fmt")
+import ("fmt"
+)
 
 func main(){
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 	var in,fm int 
 	var reg []int
@@ -32,3 +34,24 @@ func main(){
     }
 }
 >>>>>>> a647f183765cbf582532cfb5ab9d382083777731
+=======
+	for{
+		var in,fm int 
+		var ent,st string
+		fmt.Scan(&in)
+		fmt.Scan(&fm)
+		if in==0{
+			break
+		}
+		fmt.Scan(&ent)
+		st = ent[in-fm:]
+		for c:=in-fm-1;c>=0;c--{
+			for j:=0;j<fm;j++{
+				if int(st[j])<int(ent[c]){
+					
+				}
+			}
+		}
+	}
+}
+>>>>>>> Stashed changes
