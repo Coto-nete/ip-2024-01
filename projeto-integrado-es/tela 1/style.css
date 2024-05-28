@@ -26,7 +26,7 @@ body{
     margin-bottom: 20px;
     margin-left: 40px;
     height: 125px;
-    width: 100%;
+    width: 50%;
 }
 
 
@@ -43,6 +43,8 @@ body{
 #imglogo{
     background-color: var(--clr-letreiro);
     border-radius: 50%;
+    box-shadow: 5px 5px 20px gray;
+
 }
 #sobrevidas{
     margin-top: 10px;
@@ -64,11 +66,16 @@ body{
     display: flex;
     flex-direction: column;
     margin-right: 20px;
-}
+    background-color: var(--clr-letreiro);
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: 5px 5px 20px gray;
+
+    }
 
 #displayperfil{
-    margin-top: 20px;
-    margin-bottom: -20px;
+    margin-top: 10px;
+    margin-bottom: -10px;
     color: black;
 }
 
@@ -81,12 +88,12 @@ body{
 
 
 .containermeio{
-    background-color: var(--clr-fundocinza);
+    height: -20px;
 }
 
 .containerbaixo{
     display: flex;
-    justify-content:space-evenly;
+    justify-content:space-between;
     align-items: center;
     background-color: var(--clr-fundocinza);
     border-radius: 40px;
@@ -94,75 +101,100 @@ body{
     margin-right: 40px;
     margin-bottom: 10px;
     margin-left: 40px;
-    height: 125px;
-    width: 100%;
+    height: 140px;
+    
 }
 #bttns{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 100%;
-    height: 90%;
+    height: 80%;
     align-items: center;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 #fundocadastro{
     background-color: var(--clr-letreiro);
     border-radius: 20px;
     display:flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    height: 90%;
-    width: 100px;
+    height: 95%;
+    width: 120px;
     flex-direction: column;
+    margin-right: 50px;
+    box-shadow: 5px 5px 20px gray;
+
+}
+#imgcadastro{
+    margin-top: 7px;
 }
 #fundodashboard{
     background-color: var(--clr-letreiro);
     border-radius: 20px;
     display:flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    height: 90%;
-    width: 100px;
+    height: 95%;
+    width: 120px;
     flex-direction: column;
+    margin-right: 50px;
+    box-shadow: 5px 5px 20px gray;
+
+}
+#imgdashboard{
+    margin-top: 10px;
+}
+
+#fundopacientes{
+    background-color: var(--clr-letreiro);
+    border-radius: 20px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 95%;
+    width: 120px;
+    margin-right: 50px;
+    box-shadow: 5px 5px 20px gray;
+    flex-direction: column;
+    
+}
+#imgpacientes{
+    margin-top: 10px;
 }
 #fundoperfil{
     background-color: var(--clr-letreiro);
     border-radius: 20px;
     display:flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    height: 90%;
-    width: 100px;
+    height: 95%;
+    width: 120px;
     flex-direction: column;
+    box-shadow: 5px 5px 20px gray;
 }
-#fundopacientes{
-    background-color: var(--clr-letreiro);
-    border-radius: 20px;
-    display:flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 90%;
-    width: 100px;
-    flex-direction: column;
+#imgperfil{
+    margin-top: 10px;
+}
 
-}
 #ltperfil{
     color: white;
     margin-top: -10px;
-    margin-bottom: 1px;
+    margin-bottom: 10px;
 }
 #ltpacientes{
     color: white;
     margin-top: -10px;
-    margin-bottom: 1px;
+    margin-bottom: 10px;
 }
 #ltdashboard{
     color: white;
     margin-top: -10px;
-    margin-bottom: 1px;
+    margin-bottom: 10px;
 }
 #ltcadastro{
     color: white;
     margin-top: -10px;
-    margin-bottom: 1px;
+    margin-bottom: 10px;
 }
