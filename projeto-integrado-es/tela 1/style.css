@@ -1,0 +1,168 @@
+/* BASE STYLES */
+:root {
+    --clr-fundo: #A9D9FF;
+    --clr-fundocinza : #F3F3F3;
+    --clr-letreiro : #2260FF;
+  }
+
+body{
+    background-color: var(--clr-fundo);
+    background-image: url(../Sources/Imgs/fundo.png);
+}
+
+.containers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.containertopo{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: var(--clr-fundocinza);
+    border-radius: 40px;
+    margin-top: 10px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    height: 125px;
+    width: 100%;
+}
+
+
+#topoesquerda{
+    display: flex;
+    margin-left: 10px;
+    align-items: center;
+    margin-right: 50px;
+}
+
+#altlogo{
+    margin-left: 20px;
+}
+#imglogo{
+    background-color: var(--clr-letreiro);
+    border-radius: 50%;
+}
+#sobrevidas{
+    margin-top: 10px;
+    margin-bottom: -20px;
+    color: var(--clr-letreiro);
+}
+
+#topodireita{
+    display: flex;
+    justify-content: end;
+    vertical-align: middle;
+    align-items: center;
+    margin-right: 10px;
+    margin-left: 50px;
+}
+
+#altperfil{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+#displayperfil{
+    margin-top: 20px;
+    margin-bottom: -20px;
+    color: black;
+}
+
+#sair{
+    display: flex;
+    align-items: center;
+    width: 115px;
+    height: 25px;
+}
+
+
+.containermeio{
+    background-color: var(--clr-fundocinza);
+}
+
+.containerbaixo{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    background-color: var(--clr-fundocinza);
+    border-radius: 40px;
+    margin-top: 20px;
+    margin-right: 40px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    height: 125px;
+    width: 100%;
+}
+#bttns{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 90%;
+    align-items: center;
+}
+
+#fundocadastro{
+    background-color: var(--clr-letreiro);
+    border-radius: 20px;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 90%;
+    width: 100px;
+    flex-direction: column;
+}
+#fundodashboard{
+    background-color: var(--clr-letreiro);
+    border-radius: 20px;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 90%;
+    width: 100px;
+    flex-direction: column;
+}
+#fundoperfil{
+    background-color: var(--clr-letreiro);
+    border-radius: 20px;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 90%;
+    width: 100px;
+    flex-direction: column;
+}
+#fundopacientes{
+    background-color: var(--clr-letreiro);
+    border-radius: 20px;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 90%;
+    width: 100px;
+    flex-direction: column;
+
+}
+#ltperfil{
+    color: white;
+    margin-top: -10px;
+    margin-bottom: 1px;
+}
+#ltpacientes{
+    color: white;
+    margin-top: -10px;
+    margin-bottom: 1px;
+}
+#ltdashboard{
+    color: white;
+    margin-top: -10px;
+    margin-bottom: 1px;
+}
+#ltcadastro{
+    color: white;
+    margin-top: -10px;
+    margin-bottom: 1px;
+}
