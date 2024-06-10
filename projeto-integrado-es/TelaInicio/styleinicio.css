@@ -24,14 +24,17 @@ corpo{
     padding-top: 100px;
     box-shadow: 6px 6px 24px var(--corsec),-6px -6px 24px gray;
 }
-
+#img{
+    display: grid;
+    justify-content: center;
+}
 #Logo{
     filter: drop-shadow(1px 1px 30px var(--corsec))
 }
 #altlogo{
     display: grid;
     color: var(--corsec);
-    font-size: 20px;
+    font-size: 30px;
     font-family: "inherit";
     justify-content: center;
 }
