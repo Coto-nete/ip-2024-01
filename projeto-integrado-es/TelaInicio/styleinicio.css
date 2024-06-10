@@ -25,7 +25,7 @@ corpo{
     box-shadow: 6px 6px 24px var(--corsec),-6px -6px 24px gray;
 }
 #img{
-    display: grid;
+    display: grid   ;
     justify-content: center;
 }
 #Logo{
