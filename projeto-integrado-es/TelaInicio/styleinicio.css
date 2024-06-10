@@ -28,6 +28,16 @@ corpo{
 #Logo{
     filter: drop-shadow(1px 1px 30px var(--corsec))
 }
+#altlogo{
+    display: grid;
+    color: var(--corsec);
+    font-size: 20px;
+    font-family: "inherit";
+    justify-content: center;
+}
+#cb{
+    color: white;
+}
 
 button{
     width: 300px;
@@ -35,7 +45,6 @@ button{
     border-radius: 30px;
     font-size: 20px;
     font-family: inherit;
-    
     background-image: linear-gradient(to right, var(--corsec) 0%,var(--corprim) 50%);
     border: hidden;
     z-index: 1;
